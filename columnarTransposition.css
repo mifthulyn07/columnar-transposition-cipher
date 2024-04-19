@@ -1,0 +1,119 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #97BFB4;
+	font-size: 25px;
+}
+.main{
+	background-color: #f1f3f5;
+	width: 400px;
+	height: 600px;
+	border-radius: 15px;
+	box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0,0,0,0.16); 
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	font-size: 20px;
+} 
+/**/
+.type-controls{
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.encrypt,
+.decrypt{
+	margin: 0px 10px;
+	box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0,0,0,0.16); 
+	padding: 15px;
+	border-radius: 50px;
+	cursor: pointer;/*kursor berbentuk jari telunjuk*/
+}
+.encrypt:hover,
+.decrypt:hover{
+	transform: scale(0.98);
+	box-shadow: inset 5px 5px 12px #fff, 5px 5px 10px rgb(0, 0, 0,0.16); 
+}
+input[type="button"]{
+  display: none;
+}
+/**/
+.controls-input{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.text{
+	font-size: 35px;
+	font-weight: bold;
+}
+.input-plaintext,
+.input-ciphertext{
+	background-color: #f1f3f5;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #fff;
+	height: 100px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+}
+.input-plaintext input,
+.input-ciphertext input{
+	height: 100%;
+	width: 95%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
+.keyword-padchar{
+	background-color: #FF9999;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16), 5px 5px 12px #fff; 
+}
+.word{
+	display: flex;
+	align-items: center;
+	margin: 15px 0px;
+	font-weight: bold;
+	justify-content: space-between;
+}
+.input-keyword{
+	background-color: #f1f3f5;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16);
+	height: 50px;
+	width: 70%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+}
+.input-keyword input{
+	height: 100%;
+	width: 90%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+.input-padchar{
+	background-color: #f1f3f5;
+	box-shadow: inset 2px 3px 11px rgb(0,0,0,0.16);
+	height: 50px;
+	width: 30%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+}
+.input-padchar input{
+	height: 100%;
+	width: 90%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+

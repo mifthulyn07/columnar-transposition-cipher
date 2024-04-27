@@ -1,5 +1,5 @@
 # Columnar Transposition Cipher #
-This repository contains an implementation of the Columnar Transposition Cipher, a type of transposition cipher used in cryptography.
+This repository contains an implementation of the Columnar Transposition Cipher, a cryptographic technique involving transposing columns of a matrix to encrypt plaintext.
 
 # Contact #
 You can reach me at mifthulyn07@gmail.com, if you have any questions or just want to connect.

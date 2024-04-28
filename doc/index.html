@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="columnarTransposition.css">
-	<title>ColumnarTransposition</title>
-</head>
-<body>
-	<div class="title"><h1>Columnar Cipher</h1></div>
-	<div class="main">
-		<section class="controls-section">
-			<div class="type-controls">
-				<label class="encrypt" for="encrypt">Encrypt</label>
-		        <input type="button" id="encrypt" value="encrypt" name="btn-encrypt" onclick="handleEncrypt()">
-		        <label class="decrypt" for="decrypt">Decrypt</label>
-		        <input type="button" id="decrypt" value="decrypt" name="btn-decrypt" onclick="handleDecrypt()">
-      		</div>
-      		<div class="controls-input">
-      			<label class="text" for="text">Plaintext</label>
-      			<div class="input-plaintext">
-		        	<input type="text" id="plaintext" placeholder="Click here">
-	      		</div>
-      			<div class="keyword-padchar">
-      				<div class="word">
-	      				<label for="keyword">Keyword</label>
-			      		<div class="input-keyword">
-				        	<input type="text" id="keyword" value="KEY" placeholder="Click here">
-			      		</div>
-	      			</div>
-	      			<div class="word">
-	      				<label for="padchar">Pad Character (letter only)</label>
-			      		<div class="input-padchar">
-				        	<input type="text" id="padchar" value="X" placeholder="Click here">
-			      		</div>
-	      			</div>
-	      		</div>
-      			<label class="text" for="text">Ciphertext</label>
-      			<div class="input-ciphertext">
-		        	<input type="text" id="ciphertext" placeholder="Click here">
-      			</div>
-      		</div>
-		</section>
-	</div>
-	<script src="columnarTransposition.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ColumnarTransposition</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h1>Columnar Cipher</h1></div>
+      <div class="main">
+        <section class="controls-section">
+          <!-- button -->
+          <div class="type-controls">
+            <!-- encrypt -->
+            <label class="encrypt" for="encrypt">Encrypt</label>
+            <input
+              type="button"
+              id="encrypt"
+              value="encrypt"
+              name="btn-encrypt"
+              onclick="handleEncrypt()"
+            />
+            <!-- decrypt -->
+            <label class="decrypt" for="decrypt">Decrypt</label>
+            <input
+              type="button"
+              id="decrypt"
+              value="decrypt"
+              name="btn-decrypt"
+              onclick="handleDecrypt()"
+            />
+          </div>
+
+          <div class="controls-input">
+            <!-- plaintext -->
+            <div class="plaintext">
+              <label class="text" for="text">Plaintext</label>
+              <div class="input-plaintext">
+                <input type="text" id="plaintext" placeholder="Click here" />
+              </div>
+            </div>
+
+            <!-- keyword & Pad Char -->
+            <div class="keyword-padchar">
+              <div class="word">
+                <label for="keyword">Keyword</label>
+                <div class="input-keyword">
+                  <input
+                    type="text"
+                    id="keyword"
+                    value="KEY"
+                    placeholder="Click here"
+                  />
+                </div>
+              </div>
+              <div class="word">
+                <label for="padchar">Pad Character (letter only)</label>
+                <div class="input-padchar">
+                  <input
+                    type="text"
+                    id="padchar"
+                    value="X"
+                    placeholder="Click here"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ciphertext -->
+            <div class="ciphertext">
+              <label class="text" for="text">Ciphertext</label>
+              <div class="input-ciphertext">
+                <input type="text" id="ciphertext" placeholder="Click here" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

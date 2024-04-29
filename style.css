@@ -26,6 +26,7 @@ body {
   box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.16);
   padding: 20px;
   font-size: 20px;
+  font
 }
 .controls-section {
   height: 100%;
@@ -84,7 +85,7 @@ input[type="button"] {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 .keyword-padchar {
   background-color: #ff9999;
@@ -116,7 +117,7 @@ input[type="button"] {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
 }
 .input-padchar {
   background-color: #f1f3f5;
